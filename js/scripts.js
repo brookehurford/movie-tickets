@@ -1,18 +1,23 @@
 // Business Logic //
 
-function ticketPrice(movieTitle, times, age, price) {
+function Ticket(movieTitle, times, age) {
   this.movieTitle = ("Star Wars");
   this.times = ("11:00am");
   this.age = ("adult");
-  this.price = ("$10")
 }
 
-// ticketPrice.prototype.totalPrice = function() {
-//   if (ticketPrice.age = ("adult") && ticketPrice.times = ["11:00am"] || ticketPrice.times=["1:00pm"]) {
-//     return "$8"
-//   }
-//   else if (time >= 2 && age === "senior/kids") {
-//     return "$4"
-//   }
-//
-// }
+var testTicket = 10;
+Ticket.prototype.price = function() {
+  if ((testTicket.age = ("honoredCitizen") && (testTicket.times="5:00pm")))
+  return (testTicket - 5);
+
+  // else if ((testMovie.age = "honoredCitizen") && ((testMovie.times = ("11:00am")) || (testMovie.times = ("1:00pm")))) {
+  //   return "$4";
+  // }
+  // else if ((testMovie.age = "honoredCitizen") && (testMovie.times = ("7:00pm"))) {
+  //   return "$5"
+  // }
+  else {
+    return this.price;
+  }
+}

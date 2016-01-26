@@ -1,27 +1,22 @@
-describe('ticketPrice', function() {
+describe('Ticket', function() {
   it('will create a price with the following properties', function(){
-    var testPrice = new ticketPrice("Star Wars", "11:00am", "adult", "$10");
-    expect(testPrice.movieTitle).to.equal("Star Wars")
-    expect(testPrice.times).to.eql("11:00am");
-    expect(testPrice.age).to.equal("adult");
-    expect(testPrice.price).to.equal("$10");
+    var testTicket = new Ticket("Star Wars", "11:00am", "adult");
+    expect(testTicket.movieTitle).to.equal("Star Wars")
+    expect(testTicket.times).to.equal("11:00am");
+    expect(testTicket.age).to.equal("adult");
   });
 
-  it('will provide a price based on ticket price object', function () {
-    expect(testPrice.age("adult")).to.equal("$8");
-  })
-
-  // it('will show list of movie times based on movie choice', function () {
-  //   expect ("select#sisters").to.eql(["11:00, 1:20pm, 5:30pm, 7:10pm"]);
-  // })
+  it ("will show a $5 ticket price for honored citizen seeing an evening movie", function() {
+    var testTicket = new Ticket("Star Wars", "5:00pm", "honoredCitizen");
+    expect(testTicket.price()).to.equal(5)
+  });
 
 });
 
 // describe('calculatePrice', function(){
 //   it('will calculate a price based on the following properties', function(){
-//     var calculatePrice = new calculatePrice ("time", "age");
-//     expect(calculatePrice.times).to.equal([11:10])
-//     expect(calculate)
+//     var testPrice = new Movie("Star Wars", "11:00am", "adult");
+//     expect(testPrice.price()).to.equal(10)
 //   });
 // });
 
