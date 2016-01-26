@@ -21,6 +21,11 @@ describe('Ticket', function() {
     expect(testTicket.price()).to.equal(4);
   });
 
+  it("will show a $10 ticket price for an adult seeing an evening movie", function(){
+    var testTicket = new Ticket("Star Wars", "5:00pm", "adult");
+    expect(testTicket.price()).to.equal(10);
+  });
+
 });
 
 // describe('calculatePrice', function(){
