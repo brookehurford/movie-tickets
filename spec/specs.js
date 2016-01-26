@@ -11,10 +11,16 @@ describe('Ticket', function() {
     expect(testTicket.price()).to.equal(8);
   });
 
-  it ("will show a $5 ticket price for honored citizen seeing an evening movie", function() {
+  it ("will show a $5 ticket price for an honored citizen seeing an evening movie", function() {
     var testTicket = new Ticket("Star Wars", "5:00pm", "honoredCitizen");
     expect(testTicket.price()).to.equal(5);
   });
+
+  it("will show a $4 ticket price for an honored citizen seeing a matinee", function(){
+    var testTicket = new Ticket("Star Wars", "11:00am", "honoredCitizen");
+    expect(testTicket.price()).to.equal(4);
+  });
+
 });
 
 // describe('calculatePrice', function(){

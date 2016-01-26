@@ -14,6 +14,9 @@ Ticket.prototype.price = function() {
   else if ((this.age === "honoredCitizen") && (this.times === "5:00pm")) {
     return 5;
   }
+  else if ((this.age === "honoredCitizen") && (this.times ==="11:00am")) {
+    return 4;
+  }
   else {
     return 10;
   }
