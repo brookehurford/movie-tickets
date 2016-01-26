@@ -6,11 +6,15 @@ describe('Ticket', function() {
     expect(testTicket.age).to.equal("adult");
   });
 
-  it ("will show a $5 ticket price for honored citizen seeing an evening movie", function() {
-    var testTicket = new Ticket("Star Wars", "5:00pm", "honoredCitizen");
-    expect(testTicket.price()).to.equal(5)
+  it("will show a $8 ticket price for adults seeing a matinee", function(){
+    var testTicket = new Ticket("Star Wars", "1:00pm", "adult");
+    expect(testTicket.price()).to.equal(8);
   });
 
+  it ("will show a $5 ticket price for honored citizen seeing an evening movie", function() {
+    var testTicket = new Ticket("Star Wars", "5:00pm", "honoredCitizen");
+    expect(testTicket.price()).to.equal(5);
+  });
 });
 
 // describe('calculatePrice', function(){
