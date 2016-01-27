@@ -32,30 +32,30 @@
                 <label for="movie-time">What time?</label>
                 <select class="form-control" id="movie-time">
                   <option>- Select One -</option>
-                  <option class="matinee">11:00am</option>
-                  <option class="matinee">1:22pm</option>
-                  <option class="evening">5:10pm</option>
-                  <option class="evening">7:45pm</option>
+                  <option value="matinee">11:00am</option>
+                  <option value="matinee">1:22pm</option>
+                  <option value="evening">5:10pm</option>
+                  <option value="evening">7:45pm</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="movie-age">Are you an honored citizen?</label>
-                <select class="form-control" id="movie-age">
+                <label for="patron-age">Are you an honored citizen?</label>
+                <select class="form-control" id="patron-age">
                   <option>- Select One -</option>
-                  <option class="honoredCitizen">Yes, I am 65 + years old.</option>
-                  <option class="honoredCitizen">Yes, I am younger than 12.</option>
-                  <option class="honoredCitizen">Yes, I am a veteran.</option>
-                  <option class="adult">No, I am a card carrying adult.</option>
+                  <option value="honoredCitizen">Yes, I am 65 + years old.</option>
+                  <option value="honoredCitizen">Yes, I am younger than 12.</option>
+                  <option value="honoredCitizen">Yes, I am a veteran.</option>
+                  <option value="adult">No, I am a card carrying adult.</option>
                 </select>
               </div>
 
 
               <button type="submit" class="btn btn-info">Find Price</button>
           </form>
-          <div class="ticket">
+          <div id="ticket">
             <h3>Price</h3>
-            <h2><span class="price"></span></h2>
+            <span class="price"></span>
           </div>
         </div>
 
