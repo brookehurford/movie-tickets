@@ -9,16 +9,16 @@ function Ticket(movieTitle, times, age, ticketPrice) {
 Ticket.prototype.price = function() {
 
   if ((this.age === "adult") && (this.times === "matinee")) {
-    return this.ticketPrice = 8;
+    return this.ticketPrice = "$8.00";
   }
   else if ((this.age === "honoredCitizen") && (this.times === "evening")) {
-    return this.ticketPrice = 5;
+    return this.ticketPrice = "$5.00";
   }
   else if ((this.age === "honoredCitizen") && (this.times ==="matinee")) {
-    return this.ticketPrice = 4;
+    return this.ticketPrice = "$4.00";
   }
   else {
-    return this.ticketPrice = 10;
+    return this.ticketPrice = "$10.00";
   }
 };
 

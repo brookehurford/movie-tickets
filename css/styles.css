@@ -29,3 +29,7 @@ h1  {
   margin-left: 50px;
   display: none;
 }
+
+.price {
+  font-size: 40px;
+}
